@@ -222,12 +222,4 @@ VITE_API_URL=http://localhost:8000
 
 ---
 
-## 📝 License
-
-MIT License - Freely modifiable and distributable.
-
----
-
-## Version
-
 1.0.0 - April 2026
