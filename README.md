@@ -1,40 +1,40 @@
-# 🤖 Chat con tus Documentos PDF
+# 🤖 Chat with your PDF Documents
 
-**Asistente virtual para buscar y chatear sobre tus documentos de RRHH**
-
----
-
-## ¿Qué hace esta aplicación?
-
-Imaginate tener un asistente que **lee todos tus PDFs de políticas, beneficios, procedimientos** y puede responder preguntas como:
-
-- "¿Cuáles son los días de licencia por paternidad?"
-- "¿Cuántos días de vacaciones me corresponden según mi antigüedad?"
-- "¿Cuál es el plazo para presentar los comprobantes de gasto?"
-
-**¡Eso exactamente hace esta app!**
-
-Subís un documento PDF y después le ponés preguntas en lenguaje natural. El sistema busca la información relevante y te la explica con tus propias palabras.
+**AI assistant to search and chat with your HR documents**
 
 ---
 
-## ¿Para quién es?
+## What does this app do?
 
-Para vos, si trabajás en:
-- Recursos Humanos
-- Administración de Personal
-- Legales
-- Cualquier área que maneje muchos documentos
+Imagine having an assistant that **reads all your PDFs** (policies, benefits, procedures) and can answer questions like:
 
-Necesás **saber usar una computadora a nivel básico** y tener acceso al sistema de tu empresa.
+- "What are the paternity leave days?"
+- "How many vacation days do I get based on my seniority?"
+- "What's the deadline to submit expense receipts?"
+
+**That's exactly what this app does!**
+
+Upload a PDF document and then ask questions in natural language. The system finds the relevant information and explains it to you.
 
 ---
 
-## ¿Cómo la uso?
+## Who is this for?
 
-### Paso 1: Iniciá el sistema
+For anyone working in:
+- Human Resources
+- Personnel Administration
+- Legal
+- Any department that handles lots of documents
 
-**Si ya está instalado** (preguntá a Sistemas), simplemente ejecutá:
+You just need **basic computer skills** and access to your company's system.
+
+---
+
+## How do I use it?
+
+### Step 1: Start the system
+
+**If already installed** (ask IT), just run:
 
 ```bash
 # Terminal 1 - Backend
@@ -46,120 +46,120 @@ cd frontend
 npm run dev
 ```
 
-Después abrí en tu navegador: **http://localhost:3000**
+Then open in your browser: **http://localhost:3000**
 
-### Paso 2: Subir un PDF
+### Step 2: Upload a PDF
 
-1. **Arrastrá** un archivo PDF al área indicated (o hacé clic para buscarlo)
-2. **Esperá** a que termine de "indexar" (puede tomar unos segundos, según el tamaño)
-3. Vas a ver el documento aparecer en la lista de la izquierda
+1. **Drag** a PDF file to the indicated area (or click to browse)
+2. **Wait** for it to finish "indexing" (may take a few seconds depending on size)
+3. You'll see the document appear in the list on the left
 
-### Paso 3: Hacer preguntas
+### Step 3: Ask questions
 
-1. **Hacé clic** en el documento que querés consultar (se va a marcar como seleccionado)
-2. **Escribí** tu pregunta en el chat
-3. ¡Listo! El sistema te responde
+1. **Click** on the document you want to query (it will be marked as selected)
+2. **Type** your question in the chat
+3. Done! The system answers you
 
 ---
 
-## Ejemplos de preguntas que podés hacer
+## Example questions you can ask
 
-| Si tu PDF es de... | Podés preguntar... |
+| If your PDF is about... | You can ask... |
 |---|---|
-| Políticas de RRHH | "¿Cuál es la política de licencias por enfermedad?" |
-| Liquidaciones | "¿Cómo se calcula el adicional por presentismo?" |
-| Convenios colectivos | "¿Cuáles son los adicionales por turno noche?" |
-| Procedimientos | "¿Cuál es el plazo para resolver un reclamo?" |
-| Beneficios | "¿Qué cubre el plan de medicina prepaga?" |
-| Manual de empleados | "¿Qué debo hacer si me enfero?" |
+| HR Policies | "What is the sick leave policy?" |
+| Payroll | "How is the attendance bonus calculated?" |
+| Collective agreements | "What are the night shift allowances?" |
+| Procedures | "What's the deadline to resolve a complaint?" |
+| Benefits | "What does the health insurance plan cover?" |
+| Employee handbook | "What should I do if I get sick?" |
 
 ---
 
-## Funcionalidades útiles
+## Useful Features
 
-### 📂 Múltiples documentos
-Podés subir **hasta 3 PDFs a la vez**. Cada uno se procesa por separado y queda en la lista.
+### 📂 Multiple documents
+You can upload **up to 3 PDFs at once**. Each one is processed separately and stays in the list.
 
-### 🔍 Buscar en un documento específico
-Cuando hacés **clic** en un documento de la lista, el chat busca **solo en ese PDF**.
+### 🔍 Search in a specific document
+When you **click** on a document in the list, the chat searches **only in that PDF**.
 
-Si no hacés clic en ninguno, el chat busca en **todos los documentos** que hayas subido.
+If you don't click on any, the chat searches in **all uploaded documents**.
 
-### 👁️ El visualizador
-Abajo del todo podés ver el PDF que estás consultando. Es útil para verificar la fuente de la información.
+### 👁️ The viewer
+At the bottom you can view the PDF you're consulting. Useful for verifying the source of information.
 
-### 🗑️ Eliminar documentos
-Si necesitás sacar un documento del sistema, hacé clic en el ícono de papelera en la tarjeta del documento.
-
----
-
-## ¿Qué pasa si no responde bien?
-
-Si el sistema te dá una respuesta que no tiene sentido o dice que "no encontró información":
-
-1. **Revisá que hayas seleccionado el documento correcto** (haciendo clic en él)
-2. **Probá con otras palabras** - a veces conviene reformular la pregunta
-3. **Verificá que el PDF tenga texto** (no es una imagen escaneada)
-
-Si el error persiste, comunicate con el área de Sistemas.
+### 🗑️ Delete documents
+If you need to remove a document from the system, click the trash icon on the document card.
 
 ---
 
-# 📋 Guía Técnica (para Developers)
+## What if it doesn't respond well?
 
-## Estructura del Proyecto
+If the system gives you an answer that doesn't make sense or says "no information found":
+
+1. **Check that you've selected the correct document** (by clicking on it)
+2. **Try different wording** - sometimes rephrasing the question helps
+3. **Verify that the PDF contains text** (not a scanned image)
+
+If the error persists, contact IT.
+
+---
+
+# 📋 Technical Guide (for Developers)
+
+## Project Structure
 
 ```
 pdf-rag-chat/
-├── backend/                    # API REST con FastAPI
+├── backend/                    # FastAPI REST API
 │   ├── app/
-│   │   ├── core/config.py      # Configuración
-│   │   ├── models/schemas.py # Schemas Pydantic
+│   │   ├── core/config.py      # Configuration
+│   │   ├── models/schemas.py  # Pydantic schemas
 │   │   ├── services/
-│   │   │   ├── pdf_processor.py # Extracción de PDFs
-│   │   │   └── rag_service.py  # Pipeline RAG
+│   │   │   ├── pdf_processor.py # PDF extraction
+│   │   │   └── rag_service.py  # RAG pipeline
 │   │   └── main.py            # Endpoints
 │   └── requirements.txt
 │
-├── frontend/                   # Interfaz React
+├── frontend/                   # React UI
 │   ├── src/
 │   │   ├── components/
-│   │   │   ├── Sidebar.jsx    # Upload y lista de docs
+│   │   │   ├── Sidebar.jsx    # Upload and doc list
 │   │   │   └── ChatWindow.jsx # Chat UI
-│   │   ├── services/api.js    # Cliente API
+│   │   ├── services/api.js    # API client
 │   │   └── App.jsx
 │   └── package.json
 │
 └── README.md
 ```
 
-## 🚀 Inicio Rápido
+## 🚀 Quick Start
 
-### Prerrequisitos
+### Prerequisites
 
 - **Python 3.10+** (backend)
 - **Node.js 18+** (frontend)
-- **Ollama** (LLM local) - o usar OpenAI
+- **Ollama** (local LLM) - or use OpenAI
 
 ### Backend
 
 ```bash
 cd backend
 
-# Crear entorno virtual
+# Create virtual environment
 py -m venv venv
 
-# Activar (Windows)
+# Activate (Windows)
 venv\Scripts\activate
 
-# Instalar dependencias
+# Install dependencies
 pip install -r requirements.txt
 
-# Configurar Ollama (si usás LLM local)
+# Configure Ollama (if using local LLM)
 ollama serve
-ollama pull llama2  # o mistral, codellama, etc.
+ollama pull llama2  # or mistral, codellama, etc.
 
-# Arrancar servidor
+# Start server
 uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
 ```
 
@@ -171,17 +171,17 @@ npm install
 npm run dev
 ```
 
-## ⚙️ Configuración
+## ⚙️ Configuration
 
-### Variables de Entorno
+### Environment Variables
 
 **Backend** (`backend/.env`):
 ```env
-# OpenAI (opcional)
-OPENAI_API_KEY=sk-tu-api-key
+# OpenAI (optional)
+OPENAI_API_KEY=sk-your-api-key
 LLM_PROVIDER=openai
 
-# O Ollama (por defecto)
+# Or Ollama (default)
 LLM_PROVIDER=ollama
 OLLAMA_MODEL=llama2
 OLLAMA_BASE_URL=http://localhost:11434
@@ -192,42 +192,42 @@ OLLAMA_BASE_URL=http://localhost:11434
 VITE_API_URL=http://localhost:8000
 ```
 
-## 📡 Endpoints de la API
+## 📡 API Endpoints
 
-| Método | Endpoint | Descripción |
+| Method | Endpoint | Description |
 |--------|----------|-------------|
-| GET | `/health` | Verificar estado del servidor |
-| POST | `/upload` | Subir y indexar un PDF |
-| POST | `/query` | Consultar sobre el documento |
-| GET | `/documents` | Lista de documentos |
-| DELETE | `/documents/{name}` | Eliminar documento |
-| GET | `/file/{name}` | Ver archivo PDF |
-| GET | `/stats` | Estadísticas del sistema |
-| POST | `/reset` | Limpiar historial |
+| GET | `/health` | Check server status |
+| POST | `/upload` | Upload and index a PDF |
+| POST | `/query` | Query the document |
+| GET | `/documents` | List documents |
+| DELETE | `/documents/{name}` | Delete document |
+| GET | `/file/{name}` | View PDF file |
+| GET | `/stats` | System statistics |
+| POST | `/reset` | Clear conversation history |
 
-## 🛠️ Stack Tecnológico
+## 🛠️ Tech Stack
 
 ### Backend
-- **FastAPI** - Framework web
-- **LangChain** - Orquestación de LLMs
-- **ChromaDB** - Base de datos vectorial
-- **Ollama** - LLM local
+- **FastAPI** - Web framework
+- **LangChain** - LLM orchestration
+- **ChromaDB** - Vector database
+- **Ollama** - Local LLM
 - **HuggingFace** - Embeddings
 
 ### Frontend
 - **React 18** - UI
 - **Vite** - Build tool
-- **Tailwind CSS** - Estilos
-- **Axios** - Cliente HTTP
+- **Tailwind CSS** - Styles
+- **Axios** - HTTP client
 
 ---
 
-## 📝 Licencia
+## 📝 License
 
-MIT License - Libremente modificable y distribuible.
+MIT License - Freely modifiable and distributable.
 
 ---
 
-##Versión
+## Version
 
-1.0.0 - Abril 2026
+1.0.0 - April 2026
