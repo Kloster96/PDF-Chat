@@ -41,7 +41,7 @@ You just need **basic computer skills** and access to your company's system.
 cd backend
 python -m uvicorn app.main:app --reload
 
-# Terminal 2 - Frontend  
+# Terminal 2 - Frontend
 cd frontend
 npm run dev
 ```
